@@ -51,4 +51,4 @@ class LinkedList:
             self.reverse_list(next, node)
         # change to head if there is no next (tail)
         else:
-            self.head = node
+            self.head = node 
