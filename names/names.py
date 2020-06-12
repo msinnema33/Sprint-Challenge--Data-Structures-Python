@@ -37,9 +37,12 @@ for name in names_2: # checks all names in names_2 to see if BST contains them =
     if bst.contains(name):
         duplicates.append(name) # appends duplicates (BST.contains) to duplicates list
 
+'''
+
 # runtime after = 0.10103750228881836 seconds
 # Complexity = O(nlog n)
 
+'''
 
 # stretch solution #1  -- STRETCH to show
 # # define a dictionary 
