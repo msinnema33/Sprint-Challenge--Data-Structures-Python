@@ -23,7 +23,7 @@ class BinarySearchTree:
                 self.right.insert(value)
 
     # Return True if the tree contains the value
-    # False if it does not
+    # False if it does not 
     def contains(self, target):
         # at start, self will be root
         # compare target against self
