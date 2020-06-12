@@ -28,14 +28,14 @@ for name_1 in names_1:
 #
 
 '''
-# bst = BinarySearchTree('names')
+bst = BinarySearchTree('names')
 
-# for name in names_1:
-#     bst.insert(name)
+for name in names_1:
+    bst.insert(name)
 
-# for name in names_2:
-#     if bst.contains(name):
-#         duplicates.append(name)
+for name in names_2:
+    if bst.contains(name):
+        duplicates.append(name)
 
 # runtime after = 0.10103750228881836 seconds
 # Complexity = O(nlog n)
