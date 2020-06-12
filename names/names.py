@@ -22,9 +22,12 @@ for name_1 in names_1:
 # runtime before = 5.9769978523254395 seconds with 64 duplicates
 # complexity = O(n^2)
 
+'''
 
 # solution using a Binary Search Tree == MY TRY #1
 #
+
+'''
 # bst = BinarySearchTree('names')
 
 # for name in names_1:
