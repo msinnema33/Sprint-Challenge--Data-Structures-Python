@@ -23,10 +23,9 @@ duplicates = []  # Return the list of duplicates in this data structure
 # complexity = O(n^2)
 
 '''
-
+#
 # solution using a Binary Search Tree == MY TRY #1
 #
-
 '''
 bst = BinarySearchTree('names')
 
@@ -95,7 +94,7 @@ Solution using a Binary Search Tree == MY TRY #2 (put names_2 the list in the bs
     # run -time: 0.006998538970947266 seconds and 64 duplicates == slightly faster that stretch #1 (dict)
     # Complexity = O(n)
 '''
-    
+
 end_time = time.time()
 
 print(f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
