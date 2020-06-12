@@ -12,7 +12,7 @@ f = open('names_2.txt', 'r')
 names_2 = f.read().split("\n")  # List containing 10000 names
 f.close()
 
-duplicates = []  # Return the list of duplicates in this data structure
+# duplicates = []  # Return the list of duplicates in this data structure
 
 # Replace the nested for loops below with your improvements
 # for name_1 in names_1:
@@ -28,18 +28,18 @@ duplicates = []  # Return the list of duplicates in this data structure
 #
 
 '''
-bst = BinarySearchTree('names')
+# bst = BinarySearchTree('names')
 
-for name in names_1: # adds all names in names_1 to BST = O(n)
-    bst.insert(name)
+# for name in names_1: # adds all names in names_1 to BST = O(n)
+#     bst.insert(name)
 
-for name in names_2: # checks all names in names_2 to see if BST contains them = O(log n)
-    if bst.contains(name):
-        duplicates.append(name) # appends duplicates (BST.contains) to duplicates list
+# for name in names_2: # checks all names in names_2 to see if BST contains them = O(log n)
+#     if bst.contains(name):
+#         duplicates.append(name) # appends duplicates (BST.contains) to duplicates list
 
 '''
 
-# runtime after = 0.10103750228881836 seconds
+# runtime after = 0.0990447998046875 seconds with 64 duplicates
 # Complexity = O(nlog n)
 
 '''
@@ -65,7 +65,9 @@ for name in names_2: # checks all names in names_2 to see if BST contains them =
 # duplicates = [n1 for n1 in names_1 for n2 in names_2 if n1 == n2]
     # run - time: 2.8079934120178223 seconds and 64 duplicates
 # duplicates = [n2 for n2 in names_2 for n1 in names_1 if n2 == n1]
-    # run - time:  2.479006052017212 seconds with 64 duplicates  
+    # run - time:  2.479006052017212 seconds with 64 duplicates 
+    # Complexity = O(n^2) not sure why list comprehension is faster than nested for loops
+    # This one may be cheating but it said we could use duplicates List 
 
 
 # using set for both lists MY TRY #3 --Stretch
