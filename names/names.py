@@ -44,7 +44,7 @@ f.close()
 
 '''
 
-# stretch solution #1  -- STRETCH to show
+# stretch solution #1  ---STRETCH
 # # define a dictionary 
 # names_2_dict = {}
 
@@ -67,14 +67,18 @@ f.close()
 # duplicates = [n2 for n2 in names_2 for n1 in names_1 if n2 == n1]
     # run - time:  2.479006052017212 seconds with 64 duplicates 
     # Complexity = O(n^2) not sure why list comprehension is faster than nested for loops
-    # This one may be cheating but it said we could use duplicates List 
+    
+'''
 
+# using set for both lists MY TRY #3 --Stretch 
 
-# using set for both lists MY TRY #3 --Stretch
+'''
 # iterate through both and compare the two
-# & = compare. sets each bit to 1 if both bits are 1
+# & = compare. sets each bit to 1 if both bits are 1 use the & operator which is the union (duplicates) between the sets
 # duplicates = set(names_1) & set(names_2)  ## this is the line to uncomment
-    # run -time: 0.006998538970947266 seconds and 64 duplicates
+    # run -time: 0.006998538970947266 seconds and 64 duplicates == slightly faster that stretch #1 (dict)
+    # Complexity = O(n)
+    
 
 
 end_time = time.time()
