@@ -30,12 +30,12 @@ for name_1 in names_1:
 '''
 bst = BinarySearchTree('names')
 
-for name in names_1:
+for name in names_1: # adds all names in names_1 to BST = O(n)
     bst.insert(name)
 
-for name in names_2:
+for name in names_2: # checks all names in names_2 to see if BST contains them = O(log n)
     if bst.contains(name):
-        duplicates.append(name)
+        duplicates.append(name) # appends duplicates (BST.contains) to duplicates list
 
 # runtime after = 0.10103750228881836 seconds
 # Complexity = O(nlog n)
